@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Color Toggle</title>
+	<style type="text/css">
+		.color{
+			background-color: cyan;
+		}
+	</style>
+
+</head>
+<body>
+	<button>Click me!</button>
+
+	<script type="text/javascript">
+		var btn = document.querySelector("button");
+		var body = document.querySelector("body");
+		var isCyan = false;
+		btn.addEventListener("click",function(){
+			body.classList.toggle("color");
+		});
+	</script>
+</body>
+</html>
